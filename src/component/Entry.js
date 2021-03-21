@@ -1,17 +1,14 @@
 import React from 'react'
 import '../App.css';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
   
-
 function Entry() {
+
+    const Title = "Record of Wave";
+
     return (
-        <div className="title">
-            <Link to="/main">Record of Wave</Link>
+        <div style={{ display: 'flex', justifyContent: "center", alignContent: 'center', height: "100%", fontSize: '40px' }} >
+            <Link style={{display: 'block', margin: 'auto 0'}} to="/main">{Title}</Link>
         </div>
     )
 }

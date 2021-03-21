@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import Entry from "./component/Entry";
@@ -11,7 +9,7 @@ import Main from "./component/Main";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ width: '100%', height: '100vh', backgroundColor: '#77919d' }}>
       <Router>
         <Switch>
           <Route exact path="/"><Entry></Entry></Route>
